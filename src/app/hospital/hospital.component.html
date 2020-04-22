@@ -1,0 +1,52 @@
+
+<h5 class="text-center">Hospital Based Information</h5><br/>
+<div class="centertable">
+<div class="divtable">
+
+  <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <!-- Position Column -->
+    <ng-container matColumnDef="hospital.name">
+      <mat-header-cell *matHeaderCellDef> Hospital Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.hospital.name}} </mat-cell>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="cumulative_local">
+      <mat-header-cell *matHeaderCellDef> Cumulative Local </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.cumulative_local}} </mat-cell>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="cumulative_foreign">
+      <mat-header-cell *matHeaderCellDef> Cumulative Foreign </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.cumulative_foreign}} </mat-cell>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="cumulative_total">
+      <mat-header-cell *matHeaderCellDef> Cumulative Total  </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.cumulative_total}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="treatment_local">
+      <mat-header-cell *matHeaderCellDef> Treatment Local </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.treatment_local}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="treatment_foreign">
+      <mat-header-cell *matHeaderCellDef> Treatment Foreign </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.treatment_foreign}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="treatment_total">
+      <mat-header-cell *matHeaderCellDef> Treatment Total </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.treatment_total}} </mat-cell>
+    </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+</div>
+</div>
+

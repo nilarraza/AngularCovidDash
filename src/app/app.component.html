@@ -1,0 +1,23 @@
+<nav class="navbar navbar-dark bg-dark justify-content-between">
+    <a class="navbar-brand">COVID - 19 SRI LANKA</a>
+    <form class="form-inline">
+      
+      <!-- <button class="btn btn-outline-success my-2 my-sm-0" (click)="reload()" type="submit">Refresh</button> -->
+      <button mat-flat-button (click)="reload()" type="submit">Refresh</button>
+    </form>
+  </nav>
+<app-dashboard></app-dashboard>
+<app-hospital></app-hospital>
+<router-outlet></router-outlet>
+
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 covid:
+    <a class="hpb" href="https://www.hpb.health.gov.lk/ta/api-documentation">Health Promotion Bureau</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
